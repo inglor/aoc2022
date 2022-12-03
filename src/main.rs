@@ -10,7 +10,7 @@ fn main() -> color_eyre::Result<()> {
 
     match day_slice {
         "01" => days::day1::run(),
-        // "02" => days::day2::run(),
+        "02" => days::day2::run(),
         _ => println!("No valid day given. Possible options are: 01-25."),
     };
 
