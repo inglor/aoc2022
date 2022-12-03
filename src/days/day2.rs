@@ -147,8 +147,7 @@ fn part2(input_file: &str) {
     println!("Part 2: {}", total_score);
 }
 
-pub fn run() {
-    let payload = include_str!("inputs/02.txt");
+pub fn run(payload: &str) {
     part1(payload);
     part2(payload);
 }

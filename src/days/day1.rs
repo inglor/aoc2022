@@ -27,8 +27,7 @@ fn part2(input_file: &str) {
     println!("Part2: {answer:?}");
 }
 
-pub fn run() {
-    let payload = include_str!("inputs/01.txt");
+pub fn run(payload: &str) {
     part1(payload);
     part2(payload);
 }
