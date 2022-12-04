@@ -13,10 +13,10 @@ impl RuckSack {
         let second: Vec<char> = first.split_off(first.len() / 2);
         let temp_data: HashSet<char> = HashSet::from_iter(first.iter().cloned());
         let temp_data2: HashSet<char> = HashSet::from_iter(second.iter().cloned());
-        let common_elements: HashSet<char> = temp_data.intersection(&temp_data2).copied().collect();
-        let priority = common_elements
-            .iter()
-            .map(|c| RuckSack::char_to_priority(*c))
+        let priority = temp_data
+            .intersection(&temp_data2)
+            .copied()
+            .map(RuckSack::char_to_priority)
             .reduce(|a, b| a + b)
             .unwrap_or(0);
         RuckSack { items, priority }

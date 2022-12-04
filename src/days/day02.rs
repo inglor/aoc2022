@@ -1,5 +1,5 @@
-use crate::days::day2::Play::{Paper, Rock, Scissors};
-use crate::days::day2::RoundResult::{Draw, Lose, Win};
+use crate::days::day02::Play::{Paper, Rock, Scissors};
+use crate::days::day02::RoundResult::{Draw, Lose, Win};
 
 #[derive(PartialEq, Eq, Copy, Clone)]
 enum Play {
@@ -155,7 +155,7 @@ pub fn run(payload: &str) {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::days::day2::Play::{Paper, Rock, Scissors};
+    use crate::days::day02::Play::{Paper, Rock, Scissors};
     use rstest::rstest;
 
     #[rstest]

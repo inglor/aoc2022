@@ -7,13 +7,15 @@ else
 	CARGO_OPTIONS :=
 endif
 
-.PHONY: all aoc2022 lint clean
+.PHONY: all aoc2022 test lint clean
 
-all: aoc2022 lint
+all: aoc2022 test lint
 
 aoc2022:
 	$(CARGO) build $(CARGO_OPTIONS)
 
+test:
+	$(CARGO) test $(CARGO_OPTIONS)
 lint:
 	$(CARGO) fmt -- --check
 	$(CARGO) check
