@@ -6,6 +6,7 @@ edition = "2021"
 
 [dependencies]
 color-eyre = "0.6.2"
+anyhow = "1.0.66"
 itertools = "0.10.5"
 
 [dev-dependencies]
