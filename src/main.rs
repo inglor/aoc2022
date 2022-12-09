@@ -16,6 +16,7 @@ fn main() -> color_eyre::Result<()> {
         "05" => days::day05::run(include_str!("days/inputs/05.txt")),
         "06" => days::day06::run(include_str!("days/inputs/06.txt")),
         "07" => days::day07::run(include_str!("days/inputs/07.txt")),
+        "08" => days::day08::run(include_str!("days/inputs/08.txt")),
         _ => println!("No valid day given. Possible options are: 01-25."),
     };
 
