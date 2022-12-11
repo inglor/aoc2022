@@ -40,6 +40,7 @@ dependencies = [
  "color-eyre",
  "grid",
  "itertools",
+ "lazy_static",
  "parse-display",
  "rstest",
 ]
