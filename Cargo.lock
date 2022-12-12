@@ -42,6 +42,7 @@ dependencies = [
  "itertools",
  "lazy_static",
  "parse-display",
+ "regex",
  "rstest",
 ]
 
