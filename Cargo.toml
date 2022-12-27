@@ -12,6 +12,7 @@ grid = "0.9.0"
 parse-display = "0.7.0"
 regex = "1.7.0"
 pathfinding = "4.1.1"
+serde_json = "1.0.89"
 
 [dev-dependencies]
 rstest = "0.16.0"

@@ -141,7 +141,7 @@ pub fn part_2(payload: &str) -> usize {
                 }
             }
         });
-    lengths.into_iter().min().unwrap() as usize
+    lengths.into_iter().min().unwrap()
 }
 
 pub fn run(payload: &str) {
